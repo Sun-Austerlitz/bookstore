@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     # Local
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
+    "books.apps.BooksConfig",
 ]
 
 MIDDLEWARE = [
@@ -169,5 +170,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_HOST_USER = "sankibaev.asqar@gmail.com"
-EMAIL_HOST_PASSWORD = "ckcz jcks iyjh hetx"  # Replace with your actual password
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
