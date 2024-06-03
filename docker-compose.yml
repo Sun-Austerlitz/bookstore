@@ -13,6 +13,12 @@ services:
     environment:
       - "DJANGO_SECRET_KEY=django-insecure-nk11=rt(qbh@!fu89!e-ejm-pf0e06@f3cy9lq32juk(igggen"
       - "DJANGO_DEBUG=True"
+      - "DJANGO_SECURE_SSL_REDIRECT=False"
+      - "DJANGO_SECRE_HSTS_SECONDS=0"
+      - "DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=False"
+      - "DJANGO_SECURE_HSTS_PRELOAD=False"
+      - "DJANGO_SESSION_COOKIE_SECURE=False"
+      - "DJANGO_CSRF_COOKIE_SECURE=False"
       - "EMAIL_HOST_PASSWORD=ckcz jcks iyjh hetx"
   db:
     image: postgres:13
